@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery Website</title>
+    <link rel="stylesheet" href="js/Jquerywebsite.css" type="text/css">
+    <script src="jquery-3.5.0.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="show-login-page"><i class="fa fa-sign-in" aria-hidden="true"></i>
+      Show Login Page
+    </div>
+    <div class="login-box">
+<div class="hide-login-page"><i class="fa fa-times" aria-hidden="true"></i>
+
+</div>
+<form class="login-form" action="index.html" method="post">
+  <h1>LOGIN FORM</h1>
+<input class="txtb" type="text" name="" placeholder="username">
+<input class="txtb"type="password" name="" placeholder="Password">
+<input class="btn" type="submit" name="" value="Login">
+</form>
+    </div>
+
+
+<script type="text/javascript">
+   $(".show-login-page").on("click",function(){
+     $(".login-box").toggleClass("showed");
+   });
+   $(".hide-login-page").on("click",function(){
+     $(".login-box").toggleClass("showed");
+   });
+
+</script>
+  </body>
+</html>
